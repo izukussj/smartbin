@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "smartbin-443fd": {
+      "hosting": {
+        "smtb": [
+          "smartbin-443fd"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "smartbin-443fd"
+  }
+}

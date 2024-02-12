@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JaugeComponent } from './jauge.component';
+import { AddBinComponent } from './add-bin.component';
 
-describe('JaugeComponent', () => {
-  let component: JaugeComponent;
-  let fixture: ComponentFixture<JaugeComponent>;
+describe('AddBinComponent', () => {
+  let component: AddBinComponent;
+  let fixture: ComponentFixture<AddBinComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [JaugeComponent]
+      declarations: [AddBinComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(JaugeComponent);
+    fixture = TestBed.createComponent(AddBinComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

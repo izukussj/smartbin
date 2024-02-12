@@ -1,0 +1,32 @@
+<div class="list row">
+  <div class="col-md-6">
+    <h4>Bins List</h4>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let bin of bins; let i = index"
+        [class.active]="i == currentIndex"
+        (click)="setActiveBin(bin, i)"
+      >
+        {{ bin.type }}
+      </li>
+    </ul>
+
+    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllBins()">
+      Remove All
+    </button>
+  </div>
+  <div class="col-md-6">
+    <div *ngIf="currentBin">
+      <app-bin-details
+        (refreshList)="refreshList()"
+        [bin]="currentBin"
+      ></app-bin-details>
+    </div>
+
+    <div *ngIf="!currentBin">
+      <br />
+      <p>Please click on a Bin...</p>
+    </div>
+  </div>
+</div>

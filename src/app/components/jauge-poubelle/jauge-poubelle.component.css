@@ -1,0 +1,20 @@
+.jauge-container {
+  width: 100px;
+  height: 300px;
+  border: 2px solid black;
+  position: relative;
+}
+.jauge {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.vert {
+  background-color: green;
+}
+.orange {
+  background-color: orange;
+}
+.rouge {
+  background-color: red;
+}
